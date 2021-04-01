@@ -1,0 +1,47 @@
+.services {
+  margin-bottom: 70px;
+}
+
+.services__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 23px;
+  margin: 0;
+  padding: 0;
+}
+
+.service {
+  padding: 45px;
+  padding-top: 191px;
+  width: 573px;
+  min-height: 330px;
+  background-color: var(--light);
+  border-radius: 15px;
+}
+
+.service__mod--glasses {
+  background: url("../img/glasses.jpg") top center no-repeat;
+  background-color: var(--light);
+}
+
+.service__mod--table {
+  background: url("../img/table.jpg") top center no-repeat;
+  background-color: var(--light);
+}
+
+.service__mod--swimming-pool {
+  background: url("../img/swimming-pool.jpg") top center no-repeat;
+  background-color: var(--light);
+}
+
+.service__mod--cars {
+  background: url("../img/cars.jpg") top center no-repeat;
+  background-color: var(--light);
+}
+
+.item__text {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 400;
+}
+

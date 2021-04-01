@@ -1,0 +1,15 @@
+:root {
+  /* Colors */
+  --logo-color: #f0bf5f;
+  --bg-color: #e5e5e5;
+  --light: #fff;
+  --gold: #cc9933;
+  --black: #000;
+  --dark: #666;
+  --header: #333;
+  --grey: #999;
+  --grey-bg: #e9e9e9;
+  --grey-border: #CCC;
+  --grey-table: #C4C4C4;
+  --footer: #333;
+}

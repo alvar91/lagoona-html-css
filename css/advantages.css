@@ -1,0 +1,67 @@
+.advantages {
+  margin-bottom: 70px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
+}
+
+.advantages__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 23px;
+  margin: 0;
+  padding: 0;
+}
+
+.advantage {
+  padding: 106px 42px 41px 45px;
+  width: 275px;
+  min-height: 275px;
+  background-color: var(--light);
+  border-radius: 15px;
+}
+
+.advantage__mod--bathtub {
+  background: url("../img/bathtub.svg") 45px 30px no-repeat;
+  background-color: var(--light);
+}
+
+.advantage__mod--hanger {
+  background: url("../img/hanger.svg") 45px 30px no-repeat;
+  background-color: var(--light);
+}
+
+.advantage__mod--heating {
+  background: url("../img/heating.svg") 45px 30px no-repeat;
+  background-color: var(--light);
+}
+
+.advantage__mod--hotel-key {
+  background: url("../img/hotel-key.svg") 45px 30px no-repeat;
+  background-color: var(--light);
+}
+
+.advantage__mod--parking {
+  background: url("../img/parking.svg") 45px 30px no-repeat;
+  background-color: var(--light);
+}
+
+.advantage__mod--reception {
+  background: url("../img/reception.svg") 45px 30px no-repeat;
+  background-color: var(--light);
+}
+
+.advantage__mod--security-box {
+  background: url("../img/security-box.svg") 45px 30px no-repeat;
+  background-color: var(--light);
+}
+
+.advantage__mod--swimming-pool {
+  background: url("../img/swimming-pool.svg") 45px 30px no-repeat;
+  background-color: var(--light);
+}
+
+.advantage__item {
+  margin: 0;
+}

@@ -1,0 +1,104 @@
+.special-offers {
+  margin-bottom: 70px;
+}
+
+.flex-grid {
+  display: flex;
+  gap: 23px;
+}
+
+.col-left {
+  flex-basis: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 23px;
+}
+
+.col-right {
+  flex-basis: 50%;
+}
+
+.offer__group {
+  margin: 0;
+  padding: 0;
+}
+
+.offer__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 40px;
+  min-width: 573px;
+  min-height: 258px;
+  background-color: var(--light);
+  border-radius: 15px;
+}
+
+.offer__item--maldives {
+  background: linear-gradient(
+      90deg,
+      rgba(48, 64, 89, 0.84) -2.9%,
+      rgba(53, 65, 83, 0) 65.7%
+    ),
+    url("../img/maldives.jpg") center center no-repeat;
+  border: 1px solid var(--black);
+}
+
+.offer__item--creet {
+  background: linear-gradient(
+      90deg,
+      rgba(48, 64, 89, 0.84) -2.9%,
+      rgba(53, 65, 83, 0) 65.7%
+    ),
+    url("../img/creet.jpg") center center no-repeat;
+}
+
+.offer__item--lux {
+  justify-content: flex-end;
+  background: linear-gradient(
+      0deg,
+      rgba(48, 64, 89, 0.84) -2.9%,
+      rgba(53, 65, 83, 0) 65.7%
+    ),
+    url("../img/lux.jpg") center center no-repeat;
+  border: 1px solid var(--black);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  border-radius: 15px;
+}
+
+.offer__link {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 40px;
+  color: var(--light);
+  transition-duration: 0.2s;
+  transition-timing-function: ease;
+}
+
+.offer__link--big {
+  font-size: 60px;
+  line-height: 60px;
+}
+
+.offer__link:hover {
+  color: var(--gold);
+  transition-duration: 0.2s;
+  transition-timing-function: ease;
+}
+
+.offer__title {
+  margin-bottom: 15px;
+}
+
+.item__price {
+  margin: 0;
+  font-size: 20px;
+  color: var(--light);
+}
+
+.item__price--big {
+  margin-bottom: 47px;
+  font-size: 30px;
+}

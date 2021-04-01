@@ -1,0 +1,55 @@
+.form__label {
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px;
+  padding-right: 20px;
+  width: 209px;
+  font-size: 12px;
+  background: url("../img/border-form.svg") right center no-repeat;
+}
+
+.select {
+  display: inline-block;
+  width: 169px;
+  margin: 0;
+  vertical-align: top;
+  background-color: var(--light);
+  border: none;
+  font: 16px/1.43 "Muller", sans-serif;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.select:focus {
+  background-color: var(--light);
+}
+
+.select__arrows {
+  background: url("../img/triangle-down.svg") right 8px center no-repeat
+    var(--light);
+}
+
+.select__arrows:focus {
+  background: url("../img/triangle-up.svg") right 8px center no-repeat
+    var(--light);
+}
+
+.option {
+  background-color: var(--light);
+}
+
+.date {
+  min-width: 121px;
+  font-size: 16px;
+  border: none;
+}
+
+.number {
+  width: 121px;
+  font-size: 16px;
+  border: none;
+  border-bottom: 1px solid var(--grey-border);
+}
