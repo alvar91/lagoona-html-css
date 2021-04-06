@@ -13,32 +13,38 @@
 .placement__item {
   width: 374px;
   min-height: 440px;
-  background-color: var(--light);
   border-radius: 15px;
+  background-color: var(--light);
+}
+
+.link-angle {
+  vertical-align: middle;
 }
 
 .stars__list {
   padding: 0;
 }
 
+.price__prefix {
+  color: var(--grey);
+}
+
 .placement__hotel-name {
   margin: 0;
+  padding: 0 45px 16px;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
 }
 
 .placement__country {
   margin: 0;
+  padding: 0 45px 16px;
+  color: var(--grey);
 }
 
 .placement__price {
   margin: 0;
-}
-
-.placement__hotel-name {
-  padding: 0 45px 16px;
-}
-
-.placement__country {
-  padding: 0 45px 16px;
 }
 
 .placement__button {
@@ -95,8 +101,8 @@
   margin-bottom: 20px;
   width: 374px;
   height: 217px;
-  object-fit: contain;
   border-radius: 15px 15px 0px 0px;
+  object-fit: contain;
 }
 
 .item__info {

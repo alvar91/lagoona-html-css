@@ -15,8 +15,8 @@
   padding-top: 191px;
   width: 573px;
   min-height: 330px;
-  background-color: var(--light);
   border-radius: 15px;
+  background-color: var(--light);
 }
 
 .service__mod--glasses {

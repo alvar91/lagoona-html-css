@@ -1,11 +1,10 @@
 .button {
   padding: 13px 20px;
-  border: 1px solid var(--gold);
-  height: 42px;
+  border: 1px solid var(--dark-gold);
   font-family: "Muller", sans-serif;
   font-size: 16px;
-  color: var(--gold);
-  border-radius: 15px;
+  color: var(--dark-gold);
+  border-radius: 10px;
   background-color: var(--light);
   cursor: pointer;
   transition-duration: 0.2s;

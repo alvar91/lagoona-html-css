@@ -5,16 +5,16 @@
 .tour__inner {
   padding: 40px;
   min-height: 106px;
-  background-color: var(--grey-bg);
   border-radius: 15px;
+  background-color: var(--grey-bg);
 }
 
 .tour__form {
   display: flex;
   align-items: center;
   padding: 28px;
-  background-color: var(--light);
   border-radius: 15px;
+  background-color: var(--light);
 }
 
 .tour__list {

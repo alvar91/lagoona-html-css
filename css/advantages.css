@@ -18,8 +18,8 @@
   padding: 106px 42px 41px 45px;
   width: 275px;
   min-height: 275px;
-  background-color: var(--light);
   border-radius: 15px;
+  background-color: var(--light);
 }
 
 .advantage__mod--bathtub {

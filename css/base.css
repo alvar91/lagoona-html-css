@@ -31,14 +31,20 @@ ul {
   padding-top: 0 !important;
 }
 
+.mb-auto {
+  margin-bottom: auto !important;
+}
+
 .item__link {
-  display: flex;
-  align-items: center;
-  color: var(--gold);
+  color: var(--dark-gold);
   font-size: 16px;
   font-weight: 400;
   transition-duration: 0.2s;
   transition-timing-function: ease;
+}
+
+.item__link--light {
+  color: var(--gold);
 }
 
 .item__link--big {

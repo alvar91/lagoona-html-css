@@ -25,7 +25,7 @@
 .header__account {
   margin-bottom: 45px;
   font-size: 16px;
-  color: var(--gold);
+  color: var(--dark-gold);
   transition-duration: 0.2s;
   transition-timing-function: ease;
 }
@@ -41,12 +41,12 @@
 .nav {
   display: flex;
   justify-content: space-between;
-  padding: 14px 45px;
   align-items: center;
+  padding: 14px 45px;
   width: 1170px;
   min-height: 70px;
-  background: var(--light);
   border-radius: 15px;
+  background: var(--light);
 }
 
 .nav__breadcrumbs {
