@@ -39,11 +39,12 @@ ul {
   color: var(--dark-gold);
   font-size: 16px;
   font-weight: 400;
-  transition-duration: 0.2s;
-  transition-timing-function: ease;
+  z-index: 10;
+  transition: color .2s ease;
 }
 
 .item__link--light {
+  align-self: flex-start;
   color: var(--gold);
 }
 
@@ -54,12 +55,14 @@ ul {
 
 .item__link:hover {
   color: var(--grey);
-  transition-duration: 0.2s;
-  transition-timing-function: ease;
+  transition: color 0.2s ease;
+}
+
+.item__link path {
+  transition: stroke 0.2s ease;
 }
 
 .item__link:hover path {
   stroke: var(--grey);
-  transition-duration: 0.2s;
-  transition-timing-function: ease;
+  transition: stroke 0.2s ease;
 }

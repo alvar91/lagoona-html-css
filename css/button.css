@@ -7,12 +7,12 @@
   border-radius: 10px;
   background-color: var(--light);
   cursor: pointer;
-  transition-duration: 0.2s;
-  transition-timing-function: ease;
+  transition: border 0.2s ease, color 0.2s ease, transform 0.2s ease;
 }
 
 .button:hover, :focus {
   border: 1px solid var(--grey);
   color: var(--grey);
   transform: scale(1.1);
+  transition: border 0.2s ease, color 0.2s ease, transform 0.2s ease;
 }

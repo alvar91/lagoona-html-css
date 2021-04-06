@@ -26,16 +26,21 @@
   margin-bottom: 45px;
   font-size: 16px;
   color: var(--dark-gold);
-  transition-duration: 0.2s;
-  transition-timing-function: ease;
+  transition: color 0.2s ease, fill 0.2s ease;
 }
 
 .header__account:hover {
   color: var(--grey);
+  transition: color 0.2s ease;
+}
+
+.header__account path {
+  transition: fill 0.2s ease;
 }
 
 .header__account:hover path {
   fill: var(--grey);
+  transition: fill 0.2s ease;
 }
 
 .nav {

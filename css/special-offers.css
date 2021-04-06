@@ -33,39 +33,105 @@
   min-height: 258px;
   border-radius: 15px;
   background-color: var(--light);
+  z-index: 100;
 }
 
 .offer__item--maldives {
-  background: linear-gradient(
-      90deg,
-      rgba(48, 64, 89, 0.84) -2.9%,
-      rgba(53, 65, 83, 0) 65.7%
-    ),
-    url("../img/maldives.jpg") center center no-repeat;
-  border: 1px solid var(--black);
+  position: relative;
+  background: url("../img/maldives.jpg") center center no-repeat;
+  z-index: 100;
 }
 
-.offer__item--creet {
+.darken-maldives::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  opacity: 0;
   background: linear-gradient(
     90deg,
     rgba(48, 64, 89, 0.84) -2.9%,
     rgba(53, 65, 83, 0) 65.7%
-  ),
-  url("../img/creet.jpg") center center no-repeat;
+  );
+  z-index: 1;
+  transition: opacity 0.2s ease;
+}
+
+.darken-maldives:hover::before {
+  opacity: 1;
+  transition: opacity 0.2s ease;
+}
+
+.offer__item--creet {
+  position: relative;
+  background: url("../img/creet.jpg") center center no-repeat;
+}
+
+.offer__item--creet:hover {
+  animation: background-creet 0.2s forwards 0.2s;
+  animation-fill-mode: forwards;
+}
+
+.darken-creet::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  opacity: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(48, 64, 89, 0.84) -2.9%,
+    rgba(53, 65, 83, 0) 65.7%
+  );
+  z-index: 1;
+  transition: opacity 0.2s ease;
+}
+
+.darken-creet:hover::before {
+  opacity: 1;
+  transition: opacity 0.2s ease;
 }
 
 .offer__item--lux {
+  position: relative;
   justify-content: flex-end;
-  background: linear-gradient(
-      0deg,
-      rgba(48, 64, 89, 0.84) -2.9%,
-      rgba(53, 65, 83, 0) 65.7%
-    ),
-    url("../img/lux.jpg") center center no-repeat;
-  border: 1px solid var(--black);
-  box-sizing: border-box;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  background: url("../img/lux.jpg") center center no-repeat;
   border-radius: 15px;
+}
+
+.offer__item--lux:hover {
+  animation: background-lux 0.2s forwards 0.2s;
+  animation-fill-mode: forwards;
+}
+
+.darken-lux::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  opacity: 0;
+  background: linear-gradient(
+    0deg,
+    rgba(48, 64, 89, 0.84) -2.9%,
+    rgba(53, 65, 83, 0) 65.7%
+  );
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  z-index: 1;
+  transition: opacity 0.2s ease;
+}
+
+.darken-lux:hover::before {
+  opacity: 1;
+  transition: opacity 0.2s ease;
 }
 
 .offer__link {
@@ -73,8 +139,7 @@
   font-weight: 700;
   line-height: 40px;
   color: var(--light);
-  transition-duration: 0.2s;
-  transition-timing-function: ease;
+  transition: color 0.2s ease;
 }
 
 .offer__link--big {
@@ -84,8 +149,7 @@
 
 .offer__link:hover {
   color: var(--gold);
-  transition-duration: 0.2s;
-  transition-timing-function: ease;
+  transition: color 0.2s ease;
 }
 
 .offer__title {
@@ -98,6 +162,7 @@
   font-size: 20px;
   color: var(--light);
   opacity: 0.8;
+  z-index: 10;
 }
 
 .item__price--big {

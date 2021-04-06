@@ -75,14 +75,12 @@
 
 .list__link {
   color: var(--dark-gold);
-  transition-duration: 0.2s;
-  transition-timing-function: ease;
+  transition: color 0.2s ease;
 }
 
 .list__link:hover {
   color: var(--grey);
-  transition-duration: 0.2s;
-  transition-timing-function: ease;
+  transition: color 0.2s ease;
 }
 
 .contacts__button {

@@ -56,8 +56,8 @@
   font-size: 20px;
   font-weight: 500;
   color: var(--light);
-  transition-duration: 0.2s;
-  transition-timing-function: ease;
+  z-index: 10;
+  transition: color 0.2s ease, stroke 0.2s ease;
 }
 
 .link-angle {
@@ -66,14 +66,12 @@
 
 .placement__all-link:hover {
   color: var(--gold);
-  transition-duration: 0.2s;
-  transition-timing-function: ease;
+  transition: color 0.2s ease;
 }
 
 .placement__all-link:hover path {
   stroke: var(--gold);
-  transition-duration: 0.2s;
-  transition-timing-function: ease;
+  transition: stroke 0.2s ease;
 }
 
 .placement__all-link::before {
@@ -83,6 +81,7 @@
   left: 0;
   width: 100%;
   height: 100%;
+  z-index: 10;
 }
 
 .placement__item--full-img {
@@ -91,6 +90,30 @@
   width: 374px;
   text-align: center;
   background: url("../img/rocks.jpg") center center / cover no-repeat;
+  z-index: 10;
+}
+
+.darken-full::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  opacity: 0;
+  background: linear-gradient(
+    0deg,
+    rgba(48, 64, 89, 0.84) -2.9%,
+    rgba(53, 65, 83, 0) 65.7%
+  );
+  z-index: -1;
+  transition: opacity 0.2s ease;
+}
+
+.darken-full:hover::before {
+  opacity: 1;
+  transition: opacity 0.2s ease;
 }
 
 .item__article {

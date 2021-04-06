@@ -22,14 +22,12 @@
 
 .footer__link {
   color: var(--dark-gold);
-  transition-duration: 0.2s;
-  transition-timing-function: ease;
+  transition: color 0.2s ease;
 }
 
 .footer__link:hover {
   color: var(--grey);
-  transition-duration: 0.2s;
-  transition-timing-function: ease;
+  transition: color 0.2s ease;
 }
 
 .copyright__text {
@@ -43,7 +41,7 @@
 }
 
 .footer__address {
-  margin-right: 260px;
+  margin-right: auto;
   width: 358px;
 }
 
@@ -79,15 +77,13 @@
   width: 25px;
   height: 25px;
   text-indent: -9999px;
-  transition-duration: 0.2s;
-  transition-timing-function: ease;
   opacity: 0.5;
+  transition: opacity 0.2s ease;
 }
 
 .socials__link:hover {
-  transition-duration: 0.2s;
-  transition-timing-function: ease;
   opacity: 1;
+  transition: opacity 0.2s ease;
 }
 
 .socials__link--tripadvisor {
